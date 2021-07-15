@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Fem</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="./assets/src/styles.css" rel="stylesheet">
+</head>
+<noscript>
+	<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+	<section id="sidebar">
+		<div class="inner" style="font-size:20px;">
+			<nav style="font-size: 30px;">
+				<ul>
+
+					<li><a href=#globe>Stats</a></li>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#one">Purpose</a></li>
+					<li><a href="#two">Editor</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<div id="wrapper">
+		<center>
+			<section id="globe" class="wrapper style1 fullscreen fade-up">
+				<div class="inner" style="font-size: 20px;">
+					<canvas id="c"></canvas>
+					<div id="title">
+
+
+					</div>
+					<div id="currentInfo">
+						<div id="box">
+							World Gender Density(Gridded-2020)
+
+							<ul id="list"></ul>
+						</div>
+						<!--<div id="linkGroup">
+					<a href="<link-to-website-her>">
+						<span>Go to the website!</span>
+					</a>
+					<div id="divider"></div>
+					<a href="https://github.com/">
+						<span>Github</span>
+					</a>
+				</div>--->
+					</div>
+
+
+
+				</div>
+			</section>
+		</center>
+
+
+
+		<section id="intro" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h1>KALPNA</h1>
+				<p style="font-size: 30px;">A Chrome extension that detects undermining language and suggests more
+					confident phrasing to help
+					women represent
+					themselves as the professionals.</p>
+				<!--<img src="./images/emp.jpg" height="300px" id="image">
+				<img src="./images/lgbtq.png" height="300px" id="image1">-->
+				<center>
+					<div class="row">
+						<div class="column">
+							<img src="./images/emp.jpg" alt="Snow" class="image">
+						</div>
+						<div class="column">
+							<img src="./images/lgbtq.png" alt="Forest" class="image">
+						</div>
+					</div>
+				</center>
+
+
+
+			</div>
+		</section>
+
+
+
+		<!-- One -->
+		<section id="one" class="wrapper style2 spotlights">
+			<section>
+				<a href="#" class="image"><img src="./images/blog1.jpg" alt="" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Communication</h2>
+						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
+							erat malesuada quis. Aliquam dapibus.</p>
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="./images/gender.jpg" alt="" data-position="top center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Women Empowerment</h2>
+						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
+							erat malesuada quis. Aliquam dapibus.</p>
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="./images/blog3.jpg" alt="" data-position="25% 25%" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Confidence</h2>
+						<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies
+							erat malesuada quis. Aliquam dapibus.</p>
+						<ul class="actions">
+							<li><a href="generic.html" class="button">Learn more</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper style3 fade-up">
+			<div class="inner">
+
+				<h1>Text Editor</h1>
+				<div>
+					Select Voice: <select id='voiceList'></select> <br><br>
+					<input type="text" id="editor">
+					<button id='btnSpeak'>Speak!</button>
+					<button id="start-record-btn" title="Start Recording">Start Recognition</button>
+					<!---<button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>-->
+					<button id="save-note-btn" title="Save Note">Stop Recognition</button>
+					<p id="recording-instructions">Press the <strong>Start Recognition</strong> button and allow access.
+					</p>
+
+					<h3 hidden>My Notes</h3>
+					<ul hidden id="notes">
+						<li>
+							<p class="no-notes">You don't have any notes.</p>
+						</li>
+					</ul>
+					<center><button id="check" style="color: black; border: 1px solid black;">Check</button></center>
+				</div>
+			</div>
+	</div>
+
+	</div>
+	</section>
+	<script>
+		var txtInput = document.querySelector('#editor');
+		var voiceList = document.querySelector('#voiceList');
+		var btnSpeak = document.querySelector('#btnSpeak');
+		var synth = window.speechSynthesis;
+		var voices = [];
+
+		PopulateVoices();
+		if (speechSynthesis !== undefined) {
+			speechSynthesis.onvoiceschanged = PopulateVoices;
+		}
+
+		btnSpeak.addEventListener('click', () => {
+			var toSpeak = new SpeechSynthesisUtterance(txtInput.value);
+			console.log(txtInput.value);
+			var selectedVoiceName = voiceList.selectedOptions[0].getAttribute('data-name');
+			voices.forEach((voice) => {
+				if (voice.name === selectedVoiceName) {
+					toSpeak.voice = voice;
+				}
+			});
+			synth.speak(toSpeak);
+		});
+
+		function PopulateVoices() {
+			voices = synth.getVoices();
+			var selectedIndex = voiceList.selectedIndex < 0 ? 0 : voiceList.selectedIndex;
+			voiceList.innerHTML = '';
+			voices.forEach((voice) => {
+				var listItem = document.createElement('option');
+				listItem.textContent = voice.name;
+				listItem.setAttribute('data-lang', voice.lang);
+				listItem.setAttribute('data-name', voice.name);
+				voiceList.appendChild(listItem);
+			});
+
+			voiceList.selectedIndex = selectedIndex;
+		}
+	</script>
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="./assets/src/three.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.7.0/Tween.js"></script>
+	<script type="module" src="./assets/src/index.js"></script>
+
+</body>
+
+</html>
