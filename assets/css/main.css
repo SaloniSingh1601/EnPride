@@ -3962,6 +3962,8 @@ body.is-preload #sidebar nav ul li {
   height: 500px;
   width: 1000px;
   border: 1px solid black;
+  border-radius: 40px;
+  margin-bottom: 20px;
 }
 #check {
   margin-top: 20px;
@@ -3990,4 +3992,11 @@ body.is-preload #sidebar nav ul li {
 }
 .image:hover {
   transform: scale(1.2);
+}
+.size {
+  margin-left: 250px;
+}
+#head {
+  font-size: 50px;
+  font-weight: bold;
 }
