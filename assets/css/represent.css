@@ -1,6 +1,6 @@
 body {
   background: black;
-  margin-left: 300px;
+  margin-left: 600px;
   font-size: 30px;
 }
 
@@ -8,6 +8,7 @@ body {
   border: solid 3px grey;
   margin: 0px;
   padding: 0px;
+  width: 100px;
   display: block;
   float: left;
 }
@@ -20,7 +21,7 @@ body {
 }
 
 #buttons {
-  width: 818px;
+  width: 100px;
   float: left;
   border: solid 3px grey;
 }
