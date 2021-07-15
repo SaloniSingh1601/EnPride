@@ -1,12 +1,3 @@
-/*
-Released under the terms of the GNU General Public License version 2.0 (or later)
-
-Copyright: Felipe C. da S. Sanches <juca@members.fsf.org>
-           Tony de Marco <tony@garoa.tv>
-           Afonso Coutinho <afonso@yack.com.br>
-           Tamys Guimarães <tamys.guimaraes@gmail.com>
-*/
-
 const DELAY = 1000;
 
 var score,
