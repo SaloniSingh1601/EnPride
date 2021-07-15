@@ -5,7 +5,7 @@ class TweenManger {
   constructor() {
     this.numTweensRunning = 0;
   }
-  _handleComplete() {
+  _handleComplete() { 
     --this.numTweensRunning;
     console.assert(this.numTweensRunning >= 0); /* eslint no-console: off */
   }
@@ -43,11 +43,12 @@ function main() {
   const far = 10;
   const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   camera.position.set(4, 0, 0);
+  camera.zoom = 1.5;
 
   const controls = new OrbitControls(camera, canvas);
   controls.enableDamping = true;
   controls.enablePan = false;
-  controls.minDistance = 1.5;
+  controls.minDistance = 3;
   controls.maxDistance = 3;
   controls.update();
 
