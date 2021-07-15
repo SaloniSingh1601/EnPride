@@ -1,0 +1,31 @@
+{
+  "name": "Kalpna",
+  "description": "Alerts You When You Are Using Undermining Language",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "icon128.PNG",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "include_globs": [
+        "*discord*",
+        "*groupme*",
+        "*inbox.google*",
+        "*linkedin*",
+        "*mail.google*",
+        "*mail.yahoo*",
+        "*outlook*",
+        "*slack*"
+      ],
+      "js": ["./lib/jquery-3.3.1.min.js", "content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "128": "icon128.PNG"
+  }
+}

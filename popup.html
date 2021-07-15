@@ -1,0 +1,41 @@
+<html>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans"
+    rel="stylesheet"
+  />
+  <script src="./matchedWords.js"></script>
+  <script src="./trackSuggestion.js"></script>
+  <script src="./urlParser.js"></script>
+  <script src="./analyzeText.js"></script>
+  <script src="./popup.js"></script>
+  <script src="./lib/clipboard.min.js"></script>
+  <script src="./lib/jquery-3.3.1.min.js"></script>
+  <div class="heading">
+    <h2>Kalpna Suggests...</h2>
+    <p class="guidelines">
+      <b
+        >Hover over the underlined words for suggestions, double click to accept
+        the changes you like (or you can accept them all!) and then copy & paste
+        them back in place of your message!
+      </b>
+      <i
+        id="use-info"
+        class="fa fa-info-circle"
+        style="font-size: 14px"
+        title="To use Kalpna: &#013; 1) Type your message as you usually do(remember Kalpna will be able to help you only in one of our supported websites!) &#013; 2) Click on the 'Kalpna' icon in your browser &#013; 3) Hover over underlined words to see more confident suggestions &#013; 4) Double click an underlined terms to incorporate Kalpna's suggestions (Or click the 'Incorporate All Changes' button to incorporate all of them!) &#013; 5) If you prefer Copying and Pasting, click on the 'Copy and Paste' button to copy all the text in the window (Don't worry about the underlines, they won't be copied!) &#013; 6) Paste the copied text resembling the stronger and confident you!!"
+      ></i>
+    </p>
+  </div>
+  <body class="body-content">
+    <div contenteditable="true" id="popupMessage"></div>
+    <button class="btn" id="incorporate">Incorporate the suggestions</button>
+    <button class="btn" id="copyPaste">Copy and Paste</button>
+    <!-- <button class="btn" id="exportBtn"></button> -->
+    <!-- <img src="icon128.PNG" class="icon" /> -->
+  </body>
+</html>
