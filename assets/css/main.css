@@ -4000,3 +4000,37 @@ body.is-preload #sidebar nav ul li {
   font-size: 50px;
   font-weight: bold;
 }
+.imagehead {
+  border-radius: 50%;
+}
+.sheet {
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='30' width='100%'><circle r='10' cx='20' cy='13' fill='%23888' /><line x1='80' x2='80' y1='0' y2='30' stroke='%23f00' /><line x1='0' x2='100%'  y1='28' y2='28' stroke='%2300f'/></svg>");
+  background-repeat: repeat-y;
+}
+
+.textarea::after,
+.page::after,
+textarea::before,
+.page::before {
+  box-sizing: border-box;
+}
+.textarea {
+  font-family: cursive;
+  font-size: 20px;
+  line-height: 30px;
+  min-height: 50vh;
+  padding: 0 20px 0 100px;
+  width: 680px;
+  width: 90%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+#page {
+  background-color: white;
+  display: flex;
+  margin: 0;
+
+  margin-left: 100px;
+}
