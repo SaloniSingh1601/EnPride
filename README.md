@@ -16,26 +16,44 @@
   <h3 align="center">EnPride</h3>
 
   <p align="center">
-   A Chrome Extension inclusive for all.
+    Inclusivity for All!
+    <br />
+    <br />
+    ·
+    <a href="https://github.com/akshitadixit/RAKSHA/issues/new">Report Bug</a>
+    ·
+    <a href="https://github.com/akshitadixit/RAKSHA/issues/new">Request Feature</a>
+    ·
+  </p>
 </p>
 
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-A chrome extension for
-						
-- women + non-binary => that suggests you a stronger, and much more confident lingo that
-		makes you aware of how subconsciously you're trying to undermine yourself through your
-			words.
-							
-- men => that suggests you a softer, much more inclusive lingo, so you do not offend any
-				community member
-					
-- An onsite speech-to-text facility to point out under-confident words in your speech so you get
-				trained vocally, realtime.
-					
-- A flash-card type memory game that helps you with remembering types of genders and how they are
+A chrome extension for:
+						<ul>
+							<li>
+								women + non-binary => that suggests you a stronger, and much more confident lingo that
+								makes you aware of how subconsciously you're trying to undermine yourself through your
+								words.
+							</li>
+							<li>
+								men => that suggests you a softer, much more inclusive lingo, so you do not offend any
+								community member
+							</li>
+						</ul>
+					</li><br />
+					<li>
+						An onsite speech-to-text facility to point out under-confident words in your speech so you get
+						trained vocally, realtime.
+					</li><br />
+					<li>
+						A flash-card type memory game that helps you with remembering types of genders and how they are
 						represented.
 
 
@@ -43,53 +61,16 @@ A chrome extension for
 
 We build our backend using the following technologies:
 * Javascript
+* Google Analytics
+* Clipboard.js
 * Voice API
 
 The frontend involves basic web development using Bootstrap, HTML, CSS and JavaScript.
 
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may set up the project locally.
-To get a local copy up and running follow these simple example steps.
-
-
-Assuming you have Ananconda or Miniconda3 already working, create a tensorflow conda environment and then we're ready to go.
-
-* Install the current release of CPU-only TensorFlow, recommended for beginners:
-
-
-* Cd into your newly created environment (from command line or terminal)
-```
-bash cd C:\...\path-to-your-conda-environment\
-```
-
-## Running the code
-
-* Fork and clone the project.
-
-```
-bash git clone https://github.com/akshitadixit/RAKSHA
-```
-* Cd into your cloned repo (folder with the same name as the repo on your system)
-```
-bash  cd C:\...\path-to-your-cloned-repo\
-	
-``` 
-
-- Start with index.html
-	
-
-### Dependencies
-Download the [Chrome Extension](https://github.com/akshitadixit/EnPride/blob/main/assets/EnPride.zip)
-
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/akshitadixit/EnPride/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/akshitadixit/EnPride) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -118,3 +99,19 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/akshitadixit/EnPride.svg?style=plastic
+[contributors-url]: https://github.com/akshitadixit/EnPride/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/akshitadixit/EnPride.svg?style=plastic
+[forks-url]: https://github.com/akshitadixit/EnPride/network/members
+[stars-shield]: https://img.shields.io/github/stars/akshitadixit/EnPride.svg?style=plastic
+[stars-url]: https://github.com/akshitadixit/EnPride/stargazers
+[issues-shield]: https://img.shields.io/github/issues/akshitadixit/EnPride.svg?style=plastic
+[issues-url]: https://github.com/akshitadixit/EnPride/issues
+[license-shield]: https://img.shields.io/github/license/akshitadixit/EnPride.svg?style=plastic
+[license-url]: https://github.com/akshitadixit/EnPride/blob/master/LICENSE.txt
