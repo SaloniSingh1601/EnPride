@@ -13,7 +13,7 @@
 <p align="center">
     <img src="static/logo.PNG" alt="Logo" width="350" height="350">
 
-  <h3 align="center">RAKSHA</h3>
+  <h3 align="center">EnPride</h3>
 
   <p align="center">
     Virtual Self Defense Trainer
