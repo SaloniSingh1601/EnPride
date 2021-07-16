@@ -161,7 +161,7 @@
 				<div>
 					Select Voice: <select id='voiceList'></select> <br><br>
 					<!--<input type="text" id="editor">-->
-					<span class="sheet textarea" role="textbox" spellcheck="false" contenteditable="true" id="page">
+					<span class="sheet textarea" id="pop" role="textbox" spellcheck="false" contenteditable="true" id="page">
 						<br />Dear Ms. Robinson,<br /><br />
 						Jesus loves you more than you will know...<br />
 					</span>
@@ -187,7 +187,7 @@
 							<p class="no-notes">You don't have any notes.</p>
 						</li>
 					</ul>
-					<center><button id="check" style="color: black; border: 1px solid black;">Check</button></center>
+					<center><button id="check" style="color: black; border: 1px solid black;" onlick="">Check</button></center>
 				</div>
 			</div>
 		</section>
@@ -249,6 +249,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.7.0/Tween.js"></script>
 	<script type="module" src="./assets/src/index.js"></script>
 	<script src="assets/js/represent.js"></script>
+	<script src="./ext/matchedWords.js"></script>
+  <script src="./ext/trackSuggestion.js"></script>
+  <script src="./ext/urlParser.js"></script>
+  <script src="./ext/analyzeText.js"></script>
+  <script src="./ext/popup.js"></script>
+  <script src="./ext/lib/clipboard.min.js"></script>
+  <script src="./ext/lib/jquery-3.3.1.min.js"></script>
 
 </body>
 
