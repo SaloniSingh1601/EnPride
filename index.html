@@ -159,20 +159,13 @@
 
 				<h2>Text Editor</h2>
 				<div>
-					Select Voice: <select id='voiceList'></select> <br><br>
-<<<<<<< HEAD
-					<input type="text" id="editor">
-
-					<br>
-=======
-					<!--<input type="text" id="editor">-->
+					
 					<center><textarea class="sheet_textarea" role="textbox" spellcheck="false" rows= "10" contenteditable="true" type="text" id="editor"></textarea>
 					</center>
->>>>>>> c101132a673d53d7450d9ad8e3b61e3026980e3a
 					<br>
 
 					<div class="size">
-						<button id='btnSpeak'>Speak!</button>
+						<button onclick="speakText()" id='btnSpeak'>Speak!</button>
 						<button id="start-record-btn" title="Start Recording">Start Recognition</button>
 						<!---<button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>-->
 						<button id="save-note-btn" title="Save Note">Stop Recognition</button>
@@ -199,48 +192,12 @@
 	</div>
 	</section>
 	<script>
-<<<<<<< HEAD
-		var txtInput = document.querySelector('#editor');
-=======
-		var txtInput = document.querySelector("editor");
->>>>>>> c101132a673d53d7450d9ad8e3b61e3026980e3a
-		var voiceList = document.querySelector('#voiceList');
-		var btnSpeak = document.querySelector('#btnSpeak');
-		var synth = window.speechSynthesis;
-		var voices = [];
-
-		PopulateVoices();
-		if (speechSynthesis !== undefined) {
-			speechSynthesis.onvoiceschanged = PopulateVoices;
-		}
-
-		btnSpeak.addEventListener('click', () => {
-			var toSpeak = new SpeechSynthesisUtterance(txtInput.value);
-			console.log(txtInput.value);
-			var selectedVoiceName = voiceList.selectedOptions[0].getAttribute('data-name');
-			voices.forEach((voice) => {
-				if (voice.name === selectedVoiceName) {
-					toSpeak.voice = voice;
-				}
-			});
-			synth.speak(toSpeak);
-		});
-
-		function PopulateVoices() {
-			voices = synth.getVoices();
-			var selectedIndex = voiceList.selectedIndex < 0 ? 0 : voiceList.selectedIndex;
-			voiceList.innerHTML = '';
-			voices.forEach((voice) => {
-				var listItem = document.createElement('option');
-				listItem.textContent = voice.name;
-				listItem.setAttribute('data-lang', voice.lang);
-				listItem.setAttribute('data-name', voice.name);
-				voiceList.appendChild(listItem);
-			});
-
-			voiceList.selectedIndex = selectedIndex;
-		}
-	</script>
+            function speakText(){
+                var text = document.getElementById('editor').value;
+                responsiveVoice.speak(text);
+                
+            }
+        </script>
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
