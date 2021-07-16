@@ -1,69 +1,76 @@
 <html>
+
 <head>
-  <script src="js/represent.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/represent.css"/>
+  <script src="assets/js/represent.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/represent.css" />
 </head>
+<center>
 
-<body onload="init()">
-  <!-- Game Logo -->
-  <img src="images/SVG/topo.svg" alt="Represent logo">
+  <body onload="init()">
+    <!-- Game Logo 
+    <img src="images/SVG/topo.svg" alt="Represent logo" height="200px" width="200px" style="margin-right: 400px;" />-->
 
-  <!-- Playfield:INTRO -->
-  <div id="intro" style="display:block">
-    <img src="images/SVG/intro.svg" />
-  </div>
-
-  <!-- Playfield:ICON -->
-  <div id="icon" style="display:none">
-    <img id="icon_img" src="images/SVG/male.svg" />
-  </div>
-
-  <!-- Playfield:RESULT IS CORRECT -->
-  <div id="result_correct" style="display:none">
-    <img src="images/SVG/correct.svg" />
-  </div>
-
-  <!-- Playfield:RESULT IS INCORRECT -->
-  <div id="result_incorrect" style="display:none">
-    <img src="images/SVG/incorrect.svg" />
-  </div>
-
-  <!-- Playfield:GAMEOVER -->
-  <div id="gameover" style="display:none">
-    <img src="images/SVG/gameover.svg" />
-  </div>
-
-  <!-- Buttons -->
-  <div id="buttons" style="display:block" width="800px">
-    <div>
-      <img id="bisexual_female" src="images/SVG/B_bisexual_female.svg" onclick="answer(this)" />
-      <img id="gay" src="images/SVG/B_gay.svg" onclick="answer(this)" />
-      <img id="other_gender" src="images/SVG/B_other_gender.svg" onclick="answer(this)" />
+    <!-- Playfield:INTRO -->
+    <div id="intro" style="display:block">
+      <img src="images/SVG/intro.svg" height="200px" width="200px" style="margin-right: 800px;" />
     </div>
 
-    <div>
-      <img id="transgender" src="images/SVG/B_transgender.svg" onclick="answer(this)" />
-      <img id="neutrois" src="images/SVG/B_neutrois.svg" onclick="answer(this)" />
-      <img id="female" src="images/SVG/B_female.svg" onclick="answer(this)" />
+    <!-- Playfield:ICON -->
+    <div id="icon" style="display:none">
+      <img id="icon_img" src="images/SVG/male.svg" height="300px" width="200px" />
     </div>
 
-    <div>
-      <img id="bisexual_male" src="images/SVG/B_bisexual_male.svg" onclick="answer(this)" />
-      <img id="male" src="images/SVG/B_male.svg" onclick="answer(this)" />
-      <img id="heterosexual" src="images/SVG/B_heterosexual.svg" onclick="answer(this)" />
+    <!-- Playfield:RESULT IS CORRECT -->
+    <div id="result_correct" style="display:none">
+      <img src="images/SVG/correct.svg" />
     </div>
 
-    <div>
-      <img id="questioning" src="images/SVG/B_questioning.svg" onclick="answer(this)" />
-      <img id="agender" src="images/SVG/B_agender.svg" onclick="answer(this)" />
-      <img id="non_binary" src="images/SVG/B_non_binary.svg" onclick="answer(this)" />
+    <!-- Playfield:RESULT IS INCORRECT -->
+    <div id="result_incorrect" style="display:none">
+      <img src="images/SVG/incorrect.svg" width="100px" height="200px" />
     </div>
 
-    <div>
-      <img id="androgynous" src="images/SVG/B_androgynous.svg"  onclick="answer(this)" />
-      <img id="lesbian" src="images/SVG/B_lesbian.svg" onclick="answer(this)" />
-      <img id="intersex" src="images/SVG/B_intersex.svg" onclick="answer(this)" />
+    <!-- Playfield:GAMEOVER -->
+    <div id="gameover" style="display:none">
+      <img src="images/SVG/gameover.svg" />
     </div>
-  </div>
-</body>
+
+    <!-- Buttons -->
+    <center>
+      <div id="buttons" style="display:block" width="600px" style="margin-top: 100px;font-size: 20px;"
+        class="=grid-container">
+        <div class="grid-item">
+          <img id="bisexual_female" src="images/SVG/B_bisexual_female.svg" onclick="answer(this)" />
+          <img id="gay" src="images/SVG/B_gay.svg" onclick="answer(this)" />
+          <img id="other_gender" src="images/SVG/B_other_gender.svg" onclick="answer(this)" />
+        </div>
+
+        <div class="grid-item">
+          <img id="transgender" src="images/SVG/B_transgender.svg" onclick="answer(this)" />
+          <img id="neutrois" src="images/SVG/B_neutrois.svg" onclick="answer(this)" />
+          <img id="female" src="images/SVG/B_female.svg" onclick="answer(this)" />
+        </div>
+
+        <div class="grid-item">
+          <img id="bisexual_male" src="images/SVG/B_bisexual_male.svg" onclick="answer(this)" />
+          <img id="male" src="images/SVG/B_male.svg" onclick="answer(this)" />
+          <img id="heterosexual" src="images/SVG/B_heterosexual.svg" onclick="answer(this)" />
+        </div>
+
+        <div class="grid-item">
+          <img id="questioning" src="images/SVG/B_questioning.svg" onclick="answer(this)" />
+          <img id="agender" src="images/SVG/B_agender.svg" onclick="answer(this)" />
+          <img id="non_binary" src="images/SVG/B_non_binary.svg" onclick="answer(this)" />
+        </div>
+
+        <div class="grid-item">
+          <img id="androgynous" src="images/SVG/B_androgynous.svg" onclick="answer(this)" />
+          <img id="lesbian" src="images/SVG/B_lesbian.svg" onclick="answer(this)" />
+          <img id="intersex" src="images/SVG/B_intersex.svg" onclick="answer(this)" />
+        </div>
+      </div>
+    </center>
+  </body>
+</center>
+
 </html>
