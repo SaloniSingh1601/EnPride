@@ -13,7 +13,8 @@
 	<link href="./assets/src/styles.css" rel="stylesheet">
 </head>
 <noscript>
-	<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<link rel="stylesheet" href="assets/css/noscript.css" />
+</noscript>
 </head>
 
 <body class="is-preload">
@@ -26,7 +27,7 @@
 					<li><a href=#globe>Stats</a></li>
 					<li><a href="#intro">Intro</a></li>
 					<li><a href="#one">Purpose</a></li>
-					<li><a href="#gender">Pronoun</a></li>
+					<li><a href="#gender">Gender Glyphs</a></li>
 					<li><a href="#two">Editor</a></li>
 				</ul>
 			</nav>
@@ -106,7 +107,8 @@
 							<h2 class="card_title">LGVTQ+Women</h2>
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum porro, illum totam
 								nostrum sit delectus nisi sint magni perspiciatis adipisci?</p>
-							<p class="card_author">by <a href="blog1.htm" class="author_link">sofiullah chowdhury</a></p>
+							<p class="card_author">by <a href="blog1.htm" class="author_link">sofiullah chowdhury</a>
+							</p>
 							<a href="blog1.htm" class="read_more">Read article</a>
 						</div>
 					</div>
@@ -119,7 +121,8 @@
 							<h2 class="card_title">Confidence</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid optio quidem, est labore
 								earum reprehenderit quibusdam id iure delectus nemo.</p>
-							<p class="card_author">by <a href="blog2.html" class="author_link">sofiullah chowdhury</a></p>
+							<p class="card_author">by <a href="blog2.html" class="author_link">sofiullah chowdhury</a>
+							</p>
 							<a href="blog2.html" class="read_more">Read article</a>
 						</div>
 					</div>
@@ -132,7 +135,8 @@
 							<h2 class="card_title">Communication</h2>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid optio quidem, est labore
 								earum reprehenderit quibusdam id iure delectus nemo.</p>
-							<p class="card_author">by <a href="blog3.html" class="author_link">sofiullah chowdhury</a></p>
+							<p class="card_author">by <a href="blog3.html" class="author_link">sofiullah chowdhury</a>
+							</p>
 							<a href="blog3.html" class="read_more">Read article</a>
 						</div>
 					</div>
@@ -141,17 +145,74 @@
 		</section>
 
 		<!-- Two -->
-		<section id="gender" class="wrapper style1 spotlights">
+		<section id="gender" class="wrapper style1 spotlights" onload="init()">
 			<center>
-			<div class="inner">
+				<div class="inner">
 
-				<h1 style="color: white;">There are many more than just two!</h1>
-				<div>
-					<img src="images/gender.jpg">
-					<center><button id="check" style="color: black; border: 1px solid black;">Play</button></center>
+					<h1 style="color: white;">There are many more than just two!</h1>
+					<div>
+						<img src="images/gender.jpg">
+						<center><button id="check" style="color: black; border: 1px solid black;">Play</button></center>
+					</div>
+					<div class="game">
+						<!-- Playfield:ICON -->
+						<div id="icon" style="display:none">
+							<img id="icon_img" src="images/SVG/male.svg" />
+						</div>
+						<div>
+							<!-- Playfield:RESULT IS CORRECT -->
+							<div class="result_correct" style="display:none">
+								<img src="images/SVG/correct.svg" />
+							</div>
+
+							<!-- Playfield:RESULT IS INCORRECT -->
+							<div class="result_incorrect" style="display:none">
+								<img src="images/SVG/incorrect.svg" />
+							</div>
+
+							<!-- Playfield:GAMEOVER -->
+							<div class="gameover" style="display:none">
+								<img src="images/SVG/gameover.svg" />
+							</div>
+
+							<!-- Buttons -->
+							<div class="buttons" style="display:block" width="800px">
+								<div>
+									<img id="bisexual_female" src="images/SVG/B_bisexual_female.svg"
+										onclick="answer(this)" />
+									<img id="gay" src="images/SVG/B_gay.svg" onclick="answer(this)" />
+									<img id="other_gender" src="images/SVG/B_other_gender.svg" onclick="answer(this)" />
+								</div>
+
+								<div>
+									<img id="transgender" src="images/SVG/B_transgender.svg" onclick="answer(this)" />
+									<img id="neutrois" src="images/SVG/B_neutrois.svg" onclick="answer(this)" />
+									<img id="female" src="images/SVG/B_female.svg" onclick="answer(this)" />
+								</div>
+
+								<div>
+									<img id="bisexual_male" src="images/SVG/B_bisexual_male.svg"
+										onclick="answer(this)" />
+									<img id="male" src="images/SVG/B_male.svg" onclick="answer(this)" />
+									<img id="heterosexual" src="images/SVG/B_heterosexual.svg" onclick="answer(this)" />
+								</div>
+
+								<div>
+									<img id="questioning" src="images/SVG/B_questioning.svg" onclick="answer(this)" />
+									<img id="agender" src="images/SVG/B_agender.svg" onclick="answer(this)" />
+									<img id="non_binary" src="images/SVG/B_non_binary.svg" onclick="answer(this)" />
+								</div>
+
+								<div>
+									<img id="androgynous" src="images/SVG/B_androgynous.svg" onclick="answer(this)" />
+									<img id="lesbian" src="images/SVG/B_lesbian.svg" onclick="answer(this)" />
+									<img id="intersex" src="images/SVG/B_intersex.svg" onclick="answer(this)" />
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-		</center>
+			</center>
 		</section>
 
 		<!-- Two -->
@@ -249,6 +310,7 @@
 	<script src="./assets/src/three.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.7.0/Tween.js"></script>
 	<script type="module" src="./assets/src/index.js"></script>
+	<script src="assets/js/represent.js"></script>
 
 </body>
 

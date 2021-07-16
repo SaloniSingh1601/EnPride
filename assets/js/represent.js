@@ -29,14 +29,15 @@ var score,
   ];
 
 function init() {
-  intro = document.getElementById("intro");
   icon = document.getElementById("icon");
   icon_img = document.getElementById("icon_img");
-  result_correct = document.getElementById("result_correct");
-  result_incorrect = document.getElementById("result_incorrect");
-  gameover = document.getElementById("gameover");
+  button = document.getElementById("check");
+  button.onclick = new_game;
 
-  intro.onclick = new_game;
+  result_correct = document.getElementsByClassName("result_correct");
+  result_incorrect = document.getElementsByClassName("result_incorrect");
+  gameover = document.getElementsByClassName("gameover");
+
   gameover.onclick = function () {
     gameover.setAttribute("style", "display:none");
     intro.setAttribute("style", "display:block");
@@ -44,9 +45,6 @@ function init() {
 }
 
 function new_game() {
-  intro.setAttribute("style", "display:none");
-  icon.setAttribute("style", "display:block");
-
   score = 0;
   random_icons = [];
   while (random_icons.length < icon_names.length) {
