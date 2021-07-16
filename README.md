@@ -75,31 +75,14 @@ This is an example of how you may set up the project locally.
 To get a local copy up and running follow these simple example steps.
 
 
-Assuming you have Ananconda or Miniconda3 already working, create a tensorflow conda environment and install a few libraries into it, and then we're ready to go.
+Assuming you have Ananconda or Miniconda3 already working, create a tensorflow conda environment and then we're ready to go.
 
 * Install the current release of CPU-only TensorFlow, recommended for beginners:
 
-```bash
-conda create -n tf tensorflow
-conda activate tf
-```
-
-* Or, to install the current release of GPU TensorFlow on Linux or Windows:
-
-```bash
-conda create -n tf-gpu tensorflow-gpu
-conda activate tf-gpu
-```
 
 * Cd into your newly created environment (from command line or terminal)
 ```bash
 cd C:\...\path-to-your-conda-environment\
-```
-
-* Installing modules we will need 
-Though your virtual env will have all required modules, here are some extra ones required to setup this project locally.
-```bash
-pip install -r requirements.txt
 ```
 
 ## Running the code
@@ -110,18 +93,17 @@ pip install -r requirements.txt
 git clone https://github.com/akshitadixit/RAKSHA
 ```
 * Cd into your cloned repo (folder with the same name as the repo on your system)
-```bash
-cd C:\...\path-to-your-cloned-repo\
 ```
-* After making sure your tf conda environment we just created above, is activated, run the app.py file
-```bash
-python app.py
+	bash
+    cd C:\...\path-to-your-cloned-repo\
+	
+``` 
 ```
-
-Succesfull installation and running will give you a link you can visit locally. For any exceptions, kindly recheck the entire process and try again, or feel free to create an issue.
+	Start with index.html
+	```
 
 ### Dependencies
-For the complete list visit [requirements.txt](https://github.com/akshitadixit/RAKSHA/blob/master/requirements.txt)
+Download the [Chrome Extension](https://github.com/akshitadixit/EnPride/blob/main/assets/EnPride.zip)
 
 
 <!-- USAGE EXAMPLES -->
@@ -135,11 +117,7 @@ For the complete list visit [requirements.txt](https://github.com/akshitadixit/R
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/akshitadixit/RAKSHA) for a list of proposed features (and known issues).
-
-## VIDEOS
-Video link - https://drive.google.com/file/d/1zXvHk6HpLrv-2i127cx1vv41eDuQ-IVt/view?usp=sharing
-
+See the [open issues](https://github.com/akshitadixit/EnPride) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
