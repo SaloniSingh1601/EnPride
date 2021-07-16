@@ -3958,9 +3958,42 @@ body.is-preload #sidebar nav ul li {
   }
 }
 
+/* game */
+
+#gender {
+  background-attachment: fixed;
+  background-image: url("images/intro.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 10%;
+}
+
+#gender p {
+  font-size: 1.25em;
+}
+
+@media screen and (max-width: 980px) {
+  #gender p br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #gender p {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #gender {
+    background-attachment: scroll;
+  }
+}
+
 #editor {
-  height: 500px;
-  width: 1000px;
+  height: 60%;
+  width: 80%;
   border: 1px solid black;
   border-radius: 40px;
   margin-bottom: 20px;

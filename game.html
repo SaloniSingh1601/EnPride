@@ -1,16 +1,16 @@
 <html>
-
 <head>
-  <script src="./assets/js/represent.js"></script>
-  <link rel="stylesheet" type="text/css" href="./assets/css/represent.css" />
+  <script src="assets/js/represent.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/represent.css"/>
 </head>
 
-<div onload="init()">
+<body onload="init()">
   <!-- Game Logo -->
+  <img src="images/SVG/topo.svg" alt="Represent logo">
 
   <!-- Playfield:INTRO -->
-  <div id="intro" style="display:block;">
-    <img src=" images/SVG/intro.svg" height="300px" />
+  <div id="intro" style="display:block">
+    <img src="images/SVG/intro.svg" />
   </div>
 
   <!-- Playfield:ICON -->
@@ -60,11 +60,10 @@
     </div>
 
     <div>
-      <img id="androgynous" src="images/SVG/B_androgynous.svg" onclick="answer(this)" />
+      <img id="androgynous" src="images/SVG/B_androgynous.svg"  onclick="answer(this)" />
       <img id="lesbian" src="images/SVG/B_lesbian.svg" onclick="answer(this)" />
       <img id="intersex" src="images/SVG/B_intersex.svg" onclick="answer(this)" />
     </div>
   </div>
-</div>
-
+</body>
 </html>
