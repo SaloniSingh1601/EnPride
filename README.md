@@ -17,16 +17,6 @@
 
   <p align="center">
    A Chrome Extension inclusive for all.
-    <br />
-    <br />
-    ·
-    <a href="https://drive.google.com/file/d/1x_atAml5QaZT89KSTpwqJ7_WCY-tV5ql/view?usp=sharing">Video link</a>
-    ·
-    <a href="https://github.com/akshitadixit/RAKSHA/issues/new">Report Bug</a>
-    ·
-    <a href="https://github.com/akshitadixit/RAKSHA/issues/new">Request Feature</a>
-    ·
-  </p>
 </p>
 
 
@@ -71,14 +61,16 @@ Assuming you have Ananconda or Miniconda3 already working, create a tensorflow c
 
 
 * Cd into your newly created environment (from command line or terminal)
-```bash cd C:\...\path-to-your-conda-environment\
+```
+bash cd C:\...\path-to-your-conda-environment\
 ```
 
 ## Running the code
 
 * Fork and clone the project.
 
-```bash git clone https://github.com/akshitadixit/RAKSHA
+```
+bash git clone https://github.com/akshitadixit/RAKSHA
 ```
 * Cd into your cloned repo (folder with the same name as the repo on your system)
 ```
@@ -86,7 +78,7 @@ bash  cd C:\...\path-to-your-cloned-repo\
 	
 ``` 
 
--Start with index.html
+- Start with index.html
 	
 
 ### Dependencies
