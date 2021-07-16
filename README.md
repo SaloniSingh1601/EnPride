@@ -89,7 +89,7 @@ Download the [Chrome Extension](https://github.com/akshitadixit/EnPride/blob/mai
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/akshitadixit/EnPride) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/akshitadixit/EnPride/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
 ## Contributing
