@@ -1,10 +1,10 @@
-body {
+.game div {
   background: black;
   margin-left: 600px;
   font-size: 30px;
 }
 
-#buttons div img {
+.buttons div img {
   border: solid 3px grey;
   margin: 0px;
   padding: 0px;
@@ -13,14 +13,14 @@ body {
   float: left;
 }
 
-#buttons div {
+.buttons div {
   margin: 0px;
   padding: 0px;
   width: 818px;
   float: left;
 }
 
-#buttons {
+.buttons {
   width: 100px;
   float: left;
   border: solid 3px grey;
