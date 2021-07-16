@@ -16,7 +16,7 @@
   <h3 align="center">EnPride</h3>
 
   <p align="center">
-    Virtual Self Defense Trainer
+   A Chrome Extension inclusive for all.
     <br />
     <br />
     ·
@@ -30,32 +30,22 @@
 </p>
 
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-A chrome extension for:
-						<ul>
-							<li>
-								women + non-binary => that suggests you a stronger, and much more confident lingo that
-								makes you aware of how subconsciously you're trying to undermine yourself through your
-								words.
-							</li>
-							<li>
-								men => that suggests you a softer, much more inclusive lingo, so you do not offend any
-								community member
-							</li>
-						</ul>
-					</li><br />
-					<li>
-						An onsite speech-to-text facility to point out under-confident words in your speech so you get
-						trained vocally, realtime.
-					</li><br />
-					<li>
-						A flash-card type memory game that helps you with remembering types of genders and how they are
+
+A chrome extension for
+						
+- women + non-binary => that suggests you a stronger, and much more confident lingo that
+		makes you aware of how subconsciously you're trying to undermine yourself through your
+			words.
+							
+- men => that suggests you a softer, much more inclusive lingo, so you do not offend any
+				community member
+					
+- An onsite speech-to-text facility to point out under-confident words in your speech so you get
+				trained vocally, realtime.
+					
+- A flash-card type memory game that helps you with remembering types of genders and how they are
 						represented.
 
 
@@ -81,36 +71,26 @@ Assuming you have Ananconda or Miniconda3 already working, create a tensorflow c
 
 
 * Cd into your newly created environment (from command line or terminal)
-```bash
-cd C:\...\path-to-your-conda-environment\
+```bash cd C:\...\path-to-your-conda-environment\
 ```
 
 ## Running the code
 
 * Fork and clone the project.
 
-```bash
-git clone https://github.com/akshitadixit/RAKSHA
+```bash git clone https://github.com/akshitadixit/RAKSHA
 ```
 * Cd into your cloned repo (folder with the same name as the repo on your system)
 ```
-	bash
-    cd C:\...\path-to-your-cloned-repo\
+bash  cd C:\...\path-to-your-cloned-repo\
 	
 ``` 
-```
-	Start with index.html
-	```
+
+-Start with index.html
+	
 
 ### Dependencies
 Download the [Chrome Extension](https://github.com/akshitadixit/EnPride/blob/main/assets/EnPride.zip)
-
-
-<!-- USAGE EXAMPLES -->
-## Screenshots
-![land](https://user-images.githubusercontent.com/72789934/125187061-5ca9f980-e24b-11eb-991e-9504b4789acc.PNG)
-![reg](https://user-images.githubusercontent.com/72789934/125187162-d7731480-e24b-11eb-9a4a-ec4cc1c14ac2.PNG)
-![Screenshot from 2021-07-11 12-27-58](https://user-images.githubusercontent.com/56997545/125187699-87498180-e24e-11eb-8edc-9b2372b3bfa6.png)
 
 
 
@@ -146,19 +126,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 
 
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/akshitadixit/RAKSHA.svg?style=plastic
-[contributors-url]: https://github.com/akshitadixit/RAKSHA/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/akshitadixit/RAKSHA.svg?style=plastic
-[forks-url]: https://github.com/akshitadixit/RAKSHA/network/members
-[stars-shield]: https://img.shields.io/github/stars/akshitadixit/RAKSHA.svg?style=plastic
-[stars-url]: https://github.com/akshitadixit/RAKSHA/stargazers
-[issues-shield]: https://img.shields.io/github/issues/akshitadixit/RAKSHA.svg?style=plastic
-[issues-url]: https://github.com/akshitadixit/RAKSHA/issues
-[license-shield]: https://img.shields.io/github/license/akshitadixit/RAKSHA.svg?style=plastic
-[license-url]: https://github.com/akshitadixit/RAKSHA/blob/master/LICENSE.txt
