@@ -222,11 +222,8 @@
 				<h2>Text Editor</h2>
 				<div>
 					Select Voice: <select id='voiceList'></select> <br><br>
-					<!--<input type="text" id="editor">-->
-					<span class="sheet textarea" role="textbox" spellcheck="false" contenteditable="true" id="page">
-						<br />Dear Ms. Robinson,<br /><br />
-						Jesus loves you more than you will know...<br />
-					</span>
+					<input type="text" id="editor">
+
 					<br>
 					<br>
 
@@ -258,7 +255,7 @@
 	</div>
 	</section>
 	<script>
-		var txtInput = document.querySelector('.sheet textarea');
+		var txtInput = document.querySelector('#editor');
 		var voiceList = document.querySelector('#voiceList');
 		var btnSpeak = document.querySelector('#btnSpeak');
 		var synth = window.speechSynthesis;
