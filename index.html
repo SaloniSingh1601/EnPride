@@ -161,11 +161,8 @@
 				<div>
 					Select Voice: <select id='voiceList'></select> <br><br>
 					<!--<input type="text" id="editor">-->
-					<span class="sheet textarea" role="textbox" spellcheck="false" contenteditable="true" id="page">
-						<br />Dear Ms. Robinson,<br /><br />
-						Jesus loves you more than you will know...<br />
-					</span>
-					<br>
+					<center><textarea class="sheet_textarea" role="textbox" spellcheck="false" rows= "10" contenteditable="true" type="text" id="editor"></textarea>
+					</center>
 					<br>
 
 					<div class="size">
@@ -196,7 +193,7 @@
 	</div>
 	</section>
 	<script>
-		var txtInput = document.querySelector('.sheet textarea');
+		var txtInput = document.querySelector("editor");
 		var voiceList = document.querySelector('#voiceList');
 		var btnSpeak = document.querySelector('#btnSpeak');
 		var synth = window.speechSynthesis;
@@ -236,6 +233,7 @@
 	</script>
 
 	<!-- Scripts -->
+	<script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
