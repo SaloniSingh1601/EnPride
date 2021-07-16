@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <img src="images/logo.PNG" alt="Logo" width="350" height="350">
+    <img src="images/logo.png" alt="Logo" width="350" height="350">
 
   <h3 align="center">EnPride</h3>
 
@@ -37,21 +37,33 @@
 [![MIT License][license-shield]][license-url]
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-Self-defence is an important skill for self safety especially for women in times of danger. However, self-defence training is not accessible to many. And specially in these times when you cannot take one-on-one training due to lockdown restrictions, Techquillas present here your virtual self defense trainer RAKSHA which not only guides you with 11 basic self defense techniques but also grades you on how accurately you perform. Keep practicing, keep earning points and move on to the next modules! We walk you through by also taking some self awareness quizzes that help you stay on top of the leaderboard.
-
-The team presents a framework that estimates human pose using a webcam and mediapipe and analyzes the pose in order to give a score and performance based review. This framework aims at teaching self defense to users. Then features are extracted and the poses aligned in the temporal domain. The result of the overall pipeline is a score and model.predict for each feature extracted.
+A chrome extension for:
+						<ul>
+							<li>
+								women + non-binary => that suggests you a stronger, and much more confident lingo that
+								makes you aware of how subconsciously you're trying to undermine yourself through your
+								words.
+							</li>
+							<li>
+								men => that suggests you a softer, much more inclusive lingo, so you do not offend any
+								community member
+							</li>
+						</ul>
+					</li><br />
+					<li>
+						An onsite speech-to-text facility to point out under-confident words in your speech so you get
+						trained vocally, realtime.
+					</li><br />
+					<li>
+						A flash-card type memory game that helps you with remembering types of genders and how they are
+						represented.
 
 
 ### Built With
 
 We build our backend using the following technologies:
-* Flask
-* Firebase
-* Mediapipe
-* Tensorflow
-* Keras
-* OpenCV
+* Javascript
+* Voice API
 
 The frontend involves basic web development using Bootstrap, HTML, CSS and JavaScript.
 
@@ -135,10 +147,9 @@ Video link - https://drive.google.com/file/d/1zXvHk6HpLrv-2i127cx1vv41eDuQ-IVt/v
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+2. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+3. Push to the Branch (`git push origin feature/AmazingFeature`)
+4. Open a Pull Request
 
 
 
@@ -151,8 +162,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Our Contributors👩‍💻👨‍💻 :
-<a href="https://github.com/akshitadixit/RAKSHA/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=akshitadixit/RAKSHA" />
+<a href="https://github.com/akshitadixit/EnPride/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=akshitadixit/EnPride" />
 </a>
 
 
