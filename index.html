@@ -160,9 +160,15 @@
 				<h2>Text Editor</h2>
 				<div>
 					Select Voice: <select id='voiceList'></select> <br><br>
+<<<<<<< HEAD
 					<input type="text" id="editor">
 
 					<br>
+=======
+					<!--<input type="text" id="editor">-->
+					<center><textarea class="sheet_textarea" role="textbox" spellcheck="false" rows= "10" contenteditable="true" type="text" id="editor"></textarea>
+					</center>
+>>>>>>> c101132a673d53d7450d9ad8e3b61e3026980e3a
 					<br>
 
 					<div class="size">
@@ -193,7 +199,11 @@
 	</div>
 	</section>
 	<script>
+<<<<<<< HEAD
 		var txtInput = document.querySelector('#editor');
+=======
+		var txtInput = document.querySelector("editor");
+>>>>>>> c101132a673d53d7450d9ad8e3b61e3026980e3a
 		var voiceList = document.querySelector('#voiceList');
 		var btnSpeak = document.querySelector('#btnSpeak');
 		var synth = window.speechSynthesis;
@@ -233,6 +243,7 @@
 	</script>
 
 	<!-- Scripts -->
+	<script type="text/javascript" src="https://code.responsivevoice.org/responsivevoice.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/jquery.min.js"></script>
